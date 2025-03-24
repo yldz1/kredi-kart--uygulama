@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kredi Kartı Tasarımı </title>
+    <link rel="stylesheet" href="deneme.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="card-container">
+            <div class="front">
+                <div class="image">
+                    <img src="visa loog.jpg" alt="">
+                    <img src="visa kart.jpeg" alt="">
+                </div>
+                <div class="card-number-box">###########</div>
+                <div class="flexbox">
+                    <div class="box">
+                        <span>Kart Sahibi</span>
+                        <div class="card-holder-name"></div>
+                    </div>
+                    <div class="box">
+                        <span>Tarih</span>
+                        <div class="expiration">
+                            <span class="exp-month">AA</span>
+                            <span class="exp-year">YY</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="back">
+                <div class="stripe"></div>
+                <div class="box">
+                    <span>CVV</span>
+                    <div class="cvv-box"></div>
+                    <img src="visa loog.jpg" alt="">
+                </div>
+            </div>
+            <form action="">
+                <div class="inputBox">
+                    <span>KART NUMARASI</span>
+                    <input type="text" maxlength="16" class="card-number-input">
+                </div>
+
+                <div class="input-box">
+                    <span>KART SAHİBİ</span>
+                    <input type="text" class="card-holder-input">
+                </div>
+
+                <div class="flex-box">
+                    <div class="input-box">
+                        <span>GEÇERLİLİK AY</span>
+                        <select name="" class="month-input" id="">
+                            <option value="ay" selected disabled>ay</option>
+                            <option value="ay">ocak</option>
+                            <option value="ay">şubat</option>
+                            <option value="ay">mart</option>
+                            <option value="ay">nisan</option>
+                            <option value="ay">mayıs</option>
+                            <option value="ay">haziran</option>
+                            <option value="ay">temmuz</option>
+                            <option value="ay">ağustos</option>
+                            <option value="ay">eylül</option>
+                            <option value="ay">ekim</option>
+                            <option value="ay">kasım</option>
+                            <option value="ay">aralık</option>
+
+                        </select>
+                    </div>
+                    <div class="inputBox">
+                        <span>GEÇERLİLİK YIL</span>
+                        <select name="" class="year-input" id="">
+                            <option value="year" selected disabled>yıl</option>
+                            <option value="">2023</option>
+                            <option value="">2024</option>
+                            <option value="">2025</option>
+                            <option value="">2026</option>
+                            <option value="">2027</option>
+                            <option value="">2028</option>
+                            <option value="">2029</option>
+                            <option value="">2030</option>
+                            <option value="">2031</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="inputBox">
+                    <span>CVV</span>
+                    <input type="text" maxlength="3" class="cvv-input">
+                </div>
+                <input type="submit" value="Gönder" class="submit-btn">
+            </form>
+        </div>
+    </div>
+
+
+
+    <script src="deneme.js"></script>
+</body>
+
+</html>
